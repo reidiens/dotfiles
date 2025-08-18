@@ -104,12 +104,6 @@ nvim_cursorline.setup {
 	}
 }
 
-notify.setup {
-	render = "compact",
-	stages = "slide",
-	top_down = false
-}
-
 vim.g.lightline = {['colorscheme'] = 'moonfly'}
 
 vim.g.moonflyCursorColor = true
