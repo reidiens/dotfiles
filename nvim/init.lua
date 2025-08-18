@@ -5,7 +5,7 @@ vim.call('plug#begin')
 
 Plug 'rcarriga/nvim-notify'
 
-Plug 'Raimondi/delimitMate'
+Plug 'jiangmiao/auto-pairs'
 
 Plug 'neovim/nvim-lspconfig'
 Plug 'hrsh7th/cmp-nvim-lsp'
