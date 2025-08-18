@@ -27,6 +27,8 @@ Plug 'nvim-lua/plenary.nvim'
 
 vim.call('plug#end')
 
+vim.g.lightline = {['colorscheme'] = 'moonfly'}
+
 vim.cmd [[colorscheme moonfly]]
 vim.cmd [[set noshowmode]]
 vim.cmd [[set laststatus=2]]
@@ -107,8 +109,6 @@ nvim_cursorline.setup {
 		h1 = { underline = true },
 	}
 }
-
-vim.g.lightline = {['colorscheme'] = 'moonfly'}
 
 vim.g.moonflyCursorColor = true
 vim.g.moonflyTerminalColors = false
