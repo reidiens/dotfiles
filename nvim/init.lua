@@ -3,8 +3,6 @@ vim.opt.termguicolors = true
 local Plug = vim.fn['plug#']
 vim.call('plug#begin')
 
-Plug 'rcarriga/nvim-notify'
-
 Plug 'jiangmiao/auto-pairs'
 
 Plug 'neovim/nvim-lspconfig'
@@ -36,9 +34,6 @@ vim.cmd [[set laststatus=2]]
 local cmp = require('cmp')
 local luasnip = require('luasnip')
 local nvim_cursorline = require('nvim-cursorline')
-local notify = require("notify")
-
-vim.notify = notify
 
 vim.api.nvim_create_autocmd('Filetype', {
 	pattern = {'c', 'cpp', 'h', 'hpp', 'asm', 'sh', 'md', 'mkdn', 'nasm', 'fasm', 'json', 'lua', 'conf'},
