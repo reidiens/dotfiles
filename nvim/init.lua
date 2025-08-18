@@ -37,7 +37,11 @@ local nvim_cursorline = require('nvim-cursorline')
 
 vim.api.nvim_create_autocmd('Filetype', {
 	pattern = {'c', 'cpp', 'h', 'hpp', 'asm', 'sh', 'md', 'mkdn', 'nasm', 'fasm', 'json', 'lua', 'conf'},
-	command = 'set number'
+	callback = function()
+		vim.keymap.set({'n', 'v'}, 'j', 'gj')
+		vim.keymap.set({'n', 'v'}, 'k', 'gk')
+		vim.cmd [[set number]]
+	end
 })
 
 cmp.setup({
