@@ -43,6 +43,8 @@ vim.api.nvim_create_autocmd('Filetype', {
 		vim.keymap.set({'n', 'v'}, 'j', 'gj')
 		vim.keymap.set({'n', 'v'}, 'k', 'gk')
 		vim.cmd [[set number]]
+		vim.cmd [[set tabstop=4]]
+		vim.cmd [[set shiftwidth=4]]
 	end
 })
 
