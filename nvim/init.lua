@@ -94,7 +94,7 @@ require('lspconfig')['clangd'].setup {
 	capabilities = require('cmp_nvim_lsp').default_capabilities()
 }
 
-require('nnn').setup()
+require('nnn').setup({ buflisted = true })
 
 nvim_cursorline.setup {
 	cursorline = {
