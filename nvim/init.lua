@@ -99,7 +99,7 @@ require('nnn').setup({ buflisted = true })
 nvim_cursorline.setup {
 	cursorline = {
 		enable = true,
-		timeout = 300,
+		timeout = 325,
 		number = true
 	},
 	cursorword = {
