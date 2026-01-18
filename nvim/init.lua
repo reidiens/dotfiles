@@ -182,6 +182,7 @@ vim.lsp.config('clangd', {
 		['clangd'] = { capabilities = capabilities },
 	},
 })
+vim.diagnostic.config({virtual_text = false, virtual_lines = true})
 vim.lsp.enable('clangd')
 
 require('nnn').setup()
