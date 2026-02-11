@@ -1,0 +1,217 @@
+\version "2.24.4"
+\header {
+	title = "Calle Luna Calle Sol"
+	composer = "Willie Colon y Hector Lavoe"
+}
+
+\score {
+\layout { #(layout-set-staff-size 21) }
+<<
+
+\new Staff {
+	\relative {
+		\clef treble
+		\time 2/2
+		\tempo 2 = 90
+		\key c \minor
+		\repeat volta 4 {
+			r4 r8 c''8 g4. ees8
+			aes8 ees4\staccato d8 r8 g4\staccato {s1*0^\markup { \bold "4x" }} r8
+		}	
+		<c' c,>8 ees, g <ces ces,>8~ 8 ees, g <bes bes,>8~
+		8 ees, g <a a,>8~ 8 <g ees>4.
+		\ottava 1
+		\set Staff.ottavation = "8"
+		r8 ees' f g r g r g 
+		r f ees f r g4.
+		\ottava 0
+		<f,, f'>8 aes c <fes, fes'>~ 8 aes c <ees, ees'>~
+		8 aes c <d d,>~ 4 g,4
+		\repeat unfold 2 {
+			a4\staccato c8 ees r ees g,4\staccato
+			a\staccato c\staccato ees g,\staccato
+		}
+		c,4. c'8 g4. ees8
+		aes e4\staccato d8 r g4\staccato r8
+
+		\repeat volta 3 {
+			r4 r8 c g4. ees8
+			aes ees4\staccato d8 r g4\staccato {s1*0^\markup {\bold "3x"}} r8
+		}
+
+		<c c'>8 ees g <ces, ces'>~ 8 ees g <bes, bes'>~ 
+		8 ees g <a a,>~ 8 <g ees>4.
+		r8 ees f g r g r g
+		r f ees f r g4.
+		<f, f'>8 aes c <fes, fes'>~ 8 aes c <ees, ees'>~
+		8 aes c <d d,>~ 4 g,
+		a4\staccato c8 ees r ees g,4\staccato
+		a\staccato c\staccato ees g,\staccato
+		<a a'> r <g g'>8 <g g'>4 <aes aes'>8~
+		1~
+		1
+		\repeat volta 3 {
+			<aes aes'>4. <c ees> <aes aes'>4
+			<g g'>8 b d <g, g'> <ges ges'> bes des <ges, ges'>
+			f4 aes8 c~ 8 aes f4
+			f <f aes> <g bes> <c ees>
+			<ees, ees'> g8 bes~ 8 <ees, ees'>4 <d d'>8~
+			8 fis a <d, d'> <des des'> f aes <des, des'>
+			<c ees>4 g'8 c~ 8 g <c, ees>4
+			c c d ees
+			<f c aes f>4. <g d b g> <c g ees c>4
+			r1 \bar "||" 
+			r8 g c ees g ees c g
+			r8 g b d g d b g
+			r8 f bes d f d bes f
+			r8 g bes ees g ees bes g
+			r8 g c ees g ees c g
+			r8 g b d g d b g
+			r8 f bes d f d bes f
+			\bar "|"
+			\alternative {
+				\volta 1,2 { ees f ees d r2 }
+				\volta 3 { ees8 f ees d r4 c8 c }
+			}	
+		}
+
+		\repeat volta 4 {
+			<c c'>8 ees g <f f'>~ 8 aes c <g g'>~
+			8 b d <aes aes'>~ 8 c ees <c c'>~ 
+			8 ees g <aes, aes'>~ 8 <c ees> <g b d g> <g b d g>
+			\alternative {
+				\volta 1,2,3 { <g b d g>4 r4 r4 <c, c'>8 <c c'> }
+				\volta 4 { r8 e' f fis g4 r4 }
+			}
+		}
+
+		r8 d4 ees16 e f2
+		r4 r8 d8 ees4 r4
+		<aes aes,>8\< <ees ees'>4 <d d'>8 r8 <c c'>4 <aes aes'>8
+		<f f'>4 <d d'> <g g'> <c c'>\!
+		r8 c, ees g c4 g8 ees
+		\repeat volta 9 {
+			f4 d g c,
+			r8 c ees g c4 g8 ees
+			f4 d g c,
+			r8 c ees g c4 g8 ees^\markup{ \bold "9x" }
+		} 
+		\time 6/4
+		f4 aes c f, c' g
+		d g ges f d ges
+		f c e ees c f
+		d g ges f d ges
+		f aes c f, c' g
+		d g ges f d ges
+		f c e ees c f
+		d r4 r1
+		\bar "|."
+	}
+}
+
+\new Staff {
+	\relative {
+		\clef bass
+		\time 2/2
+		\key c \minor
+		\repeat volta 4 {
+			r4 r8 c' g4. ees8
+			aes ees4\staccato d8 r8 g4\staccato r8
+		}
+		c8 ees g b,8~ 8 ees g bes,8~ 
+		8 ees g a,8~ 8 <g' ees>4.
+		
+		\clef treble
+		r8 ees' f g r g r g
+		r f ees f r g4.
+		
+		\clef bass
+		f,,8 aes c fes,~ 8 aes c ees,~
+		8 a c d,~ 4 g4
+		\repeat unfold 2 {
+			a4\staccato c8 ees r ees g,4\staccato
+			a\staccato c\staccato ees g,\staccato
+		}
+		c,4. c'8 g4. ees8
+		aes e4\staccato d8 r g4\staccato r8
+
+		\repeat volta 3 {
+			r4 r8 c g4. ees8
+			aes ees4\staccato d8 r g4\staccato r8
+		}
+		
+		c ees g b,~ 8 ees g bes,~
+		8 ees g a,~ 8 <ees' g>4.
+
+		\clef treble
+		r8 c' d ees r ees r ees
+		r d c d r ees4.
+		
+		\clef bass
+		f,,8 aes c fes,~ 8 aes c ees,~
+		8 aes c d,~ 4 g
+		a4\staccato c8 ees r ees g,4\staccato
+		a\staccato c\staccato ees g,\staccato
+		a r g8 g4 <ges c ees>8~
+		1~
+		1
+
+		\repeat volta 3 {
+			aes4. <c ees> aes4
+			g8 b d g, ges bes des ges,
+			f4 aes8 c~ 8 aes f4
+			f f g aes
+			ees aes8 c~ 8 ees,4 d8~
+			8 fis a d, des f aes des,
+			c4 g'8 c~ 8 g c,4
+			c c d ees
+			f,4. g c,4
+			r1 \bar "||"
+			<g'' c ees>1
+			<g b d>
+			<f bes d>
+			<g bes ees>
+			<g c ees>
+			<g b d>
+			<f bes d>
+
+			\bar "|"
+			\alternative {
+				\volta 1,2 { aes8 bes aes g r2 }
+				\volta 3 { aes8 bes aes g r4 c,8 c }
+			}
+		}
+
+		\repeat volta 4 {
+			c8 ees g f~ 8 aes c g~
+			8 b d aes~ 8 c ees c~
+			8 ees g aes,~ 8 <c ees> g g
+			\alternative {
+				\volta 1,2,3 { g4 r4 r4 c,8 c }
+				\volta 4 { r8 e'8 f fis g4 r4 }
+			}
+		}
+		r8 d4 ees16 e f2
+		r4 r8 d8 ees4 r4
+		<aes, aes,>8 <ees' ees,>4 <d d,>8 r8 <c c,>4 <aes aes,>8
+		<f f,>4 <d d,> <g g,> <c c,>
+		r8 c, ees g c4 g8 ees
+
+		\repeat volta 9 {
+			f4 d g c,
+			r8 c ees g c4 g8 ees
+			f4 d g c,
+			r8 c ees g c4 g8 ees
+
+		}
+		\repeat unfold 3 {
+			<c f aes>1.
+			<d f g b>
+		}
+		<c f aes>
+		g'4 r4 r1
+	}
+}
+>>
+
+}

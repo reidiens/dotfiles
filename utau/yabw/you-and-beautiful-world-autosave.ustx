@@ -1,0 +1,3322 @@
+﻿name: New Project
+comment: ""
+output_dir: Vocal
+cache_dir: UCache
+ustx_version: "0.7"
+resolution: 480
+bpm: 120
+beat_per_bar: 4
+beat_unit: 4
+expressions:
+  dyn:
+    name: dynamics (curve)
+    abbr: dyn
+    type: Curve
+    min: -240
+    max: 120
+    default_value: 0
+    is_flag: false
+    flag: ""
+  pitd:
+    name: pitch deviation (curve)
+    abbr: pitd
+    type: Curve
+    min: -1200
+    max: 1200
+    default_value: 0
+    is_flag: false
+    flag: ""
+  clr:
+    name: voice color
+    abbr: clr
+    type: Options
+    min: 0
+    max: -1
+    default_value: 0
+    is_flag: false
+    options: []
+  eng:
+    name: resampler engine
+    abbr: eng
+    type: Options
+    min: 0
+    max: 1
+    default_value: 0
+    is_flag: false
+    options:
+    - ""
+    - worldline
+  vel:
+    name: velocity
+    abbr: vel
+    type: Numerical
+    min: 0
+    max: 200
+    default_value: 100
+    is_flag: false
+    flag: ""
+  vol:
+    name: volume
+    abbr: vol
+    type: Numerical
+    min: 0
+    max: 200
+    default_value: 100
+    is_flag: false
+    flag: ""
+  atk:
+    name: attack
+    abbr: atk
+    type: Numerical
+    min: 0
+    max: 200
+    default_value: 100
+    is_flag: false
+    flag: ""
+  dec:
+    name: decay
+    abbr: dec
+    type: Numerical
+    min: 0
+    max: 100
+    default_value: 0
+    is_flag: false
+    flag: ""
+  gen:
+    name: gender
+    abbr: gen
+    type: Numerical
+    min: -100
+    max: 100
+    default_value: 0
+    is_flag: true
+    flag: g
+  genc:
+    name: gender (curve)
+    abbr: genc
+    type: Curve
+    min: -100
+    max: 100
+    default_value: 0
+    is_flag: false
+    flag: ""
+  bre:
+    name: breath
+    abbr: bre
+    type: Numerical
+    min: 0
+    max: 100
+    default_value: 0
+    is_flag: true
+    flag: B
+  brec:
+    name: breathiness (curve)
+    abbr: brec
+    type: Curve
+    min: -100
+    max: 100
+    default_value: 0
+    is_flag: false
+    flag: ""
+  lpf:
+    name: lowpass
+    abbr: lpf
+    type: Numerical
+    min: 0
+    max: 100
+    default_value: 0
+    is_flag: true
+    flag: H
+  norm:
+    name: normalize
+    abbr: norm
+    type: Numerical
+    min: 0
+    max: 100
+    default_value: 86
+    is_flag: true
+    flag: P
+  mod:
+    name: modulation
+    abbr: mod
+    type: Numerical
+    min: 0
+    max: 100
+    default_value: 0
+    is_flag: false
+    flag: ""
+  mod+:
+    name: modulation plus
+    abbr: mod+
+    type: Numerical
+    min: 0
+    max: 100
+    default_value: 0
+    is_flag: false
+    flag: ""
+  alt:
+    name: alternate
+    abbr: alt
+    type: Numerical
+    min: 0
+    max: 16
+    default_value: 0
+    is_flag: false
+    flag: ""
+  dir:
+    name: direct
+    abbr: dir
+    type: Options
+    min: 0
+    max: 1
+    default_value: 0
+    is_flag: false
+    options:
+    - off
+    - on
+  shft:
+    name: tone shift
+    abbr: shft
+    type: Numerical
+    min: -36
+    max: 36
+    default_value: 0
+    is_flag: false
+    flag: ""
+  shfc:
+    name: tone shift (curve)
+    abbr: shfc
+    type: Curve
+    min: -1200
+    max: 1200
+    default_value: 0
+    is_flag: false
+    flag: ""
+  tenc:
+    name: tension (curve)
+    abbr: tenc
+    type: Curve
+    min: -100
+    max: 100
+    default_value: 0
+    is_flag: false
+    flag: ""
+  voic:
+    name: voicing (curve)
+    abbr: voic
+    type: Curve
+    min: 0
+    max: 100
+    default_value: 100
+    is_flag: false
+    flag: ""
+exp_selectors:
+- dyn
+- pitd
+- clr
+- eng
+- vel
+- vol
+- atk
+- dec
+- gen
+- bre
+exp_primary: 0
+exp_secondary: 1
+key: 0
+time_signatures:
+- bar_position: 0
+  beat_per_bar: 4
+  beat_unit: 4
+tempos:
+- position: 0
+  bpm: 80
+tracks:
+- singer: NECTO_おまとめ
+  phonemizer: OpenUtau.Core.DefaultPhonemizer
+  renderer_settings:
+    renderer: CLASSIC
+    resampler: worldline
+    wavtool: convergence
+  track_name: Track1
+  track_color: Blue
+  mute: false
+  solo: false
+  volume: 1.0243902439024382
+  pan: 0
+  track_expressions: []
+  voice_color_names:
+  - ""
+- singer: NECTO_おまとめ
+  phonemizer: OpenUtau.Core.DefaultPhonemizer
+  renderer_settings:
+    renderer: CLASSIC
+    resampler: worldline
+    wavtool: convergence
+  track_name: harmony
+  track_color: Blue
+  mute: false
+  solo: false
+  volume: -2.9268292682926855
+  pan: 0
+  track_expressions: []
+  voice_color_names:
+  - ""
+- phonemizer: OpenUtau.Core.DefaultPhonemizer
+  renderer_settings: {}
+  track_name: Track3
+  track_color: Blue
+  mute: false
+  solo: false
+  volume: 0.5853658536585371
+  pan: 0
+  track_expressions: []
+  voice_color_names:
+  - ""
+voice_parts:
+- duration: 48000
+  name: New Part
+  comment: ""
+  track_no: 0
+  position: 32640
+  notes:
+  - position: 480
+    duration: 240
+    tone: 52
+    lyric: '- せ弱G#3'
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 720
+    duration: 120
+    tone: 49
+    lyric: e か弱G#3
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 840
+    duration: 360
+    tone: 50
+    lyric: a い弱G#3
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 1200
+    duration: 240
+    tone: 49
+    lyric: i わ弱G#3
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 1440
+    duration: 240
+    tone: 47
+    lyric: a こ弱G#3
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 1680
+    duration: 240
+    tone: 45
+    lyric: o ん弱G#3
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 1920
+    duration: 240
+    tone: 47
+    lyric: n な弱G#3
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 2160
+    duration: 120
+    tone: 49
+    lyric: a に弱G#3
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 2280
+    duration: 240
+    tone: 49
+    lyric: i も弱G#3
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 2760
+    duration: 120
+    tone: 52
+    lyric: '- うG#3'
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 2880
+    duration: 240
+    tone: 57
+    lyric: u つ弱G#3
+    pitch:
+      data:
+      - {x: -40, y: -50, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 3120
+    duration: 240
+    tone: 59
+    lyric: u く弱G#3
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 3360
+    duration: 120
+    tone: 57
+    lyric: u し弱G#3
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 3480
+    duration: 120
+    tone: 56
+    lyric: i く弱G#3
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 3600
+    duration: 240
+    tone: 57
+    lyric: u て弱G#3
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 4320
+    duration: 240
+    tone: 52
+    lyric: '- き弱G#3'
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 4560
+    duration: 120
+    tone: 49
+    lyric: i ざ弱G#3
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 4680
+    duration: 360
+    tone: 50
+    lyric: a む弱G#3
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 5040
+    duration: 240
+    tone: 49
+    lyric: u は弱G#3
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 5280
+    duration: 240
+    tone: 47
+    lyric: a り弱G#3
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 5520
+    duration: 240
+    tone: 45
+    lyric: i の弱G#3
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 5760
+    duration: 240
+    tone: 47
+    lyric: o う弱G#3
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 6000
+    duration: 120
+    tone: 49
+    lyric: u え弱G#3
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 6120
+    duration: 240
+    tone: 49
+    lyric: e で弱G#3
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 6600
+    duration: 120
+    tone: 52
+    lyric: '- き弱G#3'
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 6720
+    duration: 240
+    tone: 59
+    lyric: i み弱C4
+    pitch:
+      data:
+      - {x: -45.3125, y: -70, shape: l}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 6960
+    duration: 120
+    tone: 61
+    lyric: i お弱C4
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 7080
+    duration: 240
+    tone: 59
+    lyric: o ま弱C4
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 7320
+    duration: 360
+    tone: 57
+    lyric: a つ弱G#3
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 8160
+    duration: 240
+    tone: 52
+    lyric: '- こ弱G#3'
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 8400
+    duration: 120
+    tone: 49
+    lyric: o わ弱G#3
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 8520
+    duration: 360
+    tone: 50
+    lyric: a く弱G#3
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 8880
+    duration: 240
+    tone: 49
+    lyric: u な弱G#3
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 9120
+    duration: 240
+    tone: 47
+    lyric: a る弱G#3
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 9360
+    duration: 240
+    tone: 45
+    lyric: u く弱G#3
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 9600
+    duration: 240
+    tone: 47
+    lyric: u ら弱G#3
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 9840
+    duration: 120
+    tone: 49
+    lyric: a い弱G#3
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 9960
+    duration: 240
+    tone: 49
+    lyric: i に弱G#3
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 10440
+    duration: 120
+    tone: 52
+    lyric: '- い弱G#3'
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 10560
+    duration: 240
+    tone: 57
+    lyric: i と弱G#3
+    pitch:
+      data:
+      - {x: -40, y: -50, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 10800
+    duration: 240
+    tone: 59
+    lyric: o お弱G#3
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 11040
+    duration: 120
+    tone: 57
+    lyric: o し弱G#3
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 11160
+    duration: 120
+    tone: 56
+    lyric: i く弱G#3
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 11280
+    duration: 240
+    tone: 57
+    lyric: u て弱G#3
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 12000
+    duration: 240
+    tone: 52
+    lyric: '- う弱G#3'
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 12240
+    duration: 120
+    tone: 49
+    lyric: u つ弱G#3
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 12360
+    duration: 360
+    tone: 50
+    lyric: u く弱G#3
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 12720
+    duration: 240
+    tone: 49
+    lyric: u し弱G#3
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 12960
+    duration: 240
+    tone: 47
+    lyric: i い弱G#3
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 13200
+    duration: 240
+    tone: 45
+    lyric: i せ弱G#3
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 13440
+    duration: 240
+    tone: 47
+    lyric: e か弱G#3
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 13680
+    duration: 120
+    tone: 49
+    lyric: a い弱G#3
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 13800
+    duration: 240
+    tone: 49
+    lyric: i わ弱G#3
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 14280
+    duration: 120
+    tone: 52
+    lyric: '- い弱G#3'
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 14400
+    duration: 240
+    tone: 59
+    lyric: i ろ弱G#3
+    pitch:
+      data:
+      - {x: -40, y: -70, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 14640
+    duration: 120
+    tone: 61
+    lyric: o あ弱C4
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 14760
+    duration: 240
+    tone: 59
+    lyric: a せ弱C4
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 15000
+    duration: 360
+    tone: 57
+    lyric: e て弱G#3
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 15360
+    duration: 720
+    tone: 56
+    lyric: e ゆ弱C4
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 62.36111, period: 185, depth: 15.056992, in: 18.262806, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 51}
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides:
+    - index: 0
+      offset: -22
+      preutter_delta: -4.9342103
+  - position: 16080
+    duration: 1200
+    tone: 57
+    lyric: u く弱G#3
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 62.416668, period: 190, depth: 27.840805, in: 22.429905, out: 22.563417, shift: 9.433963, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: bre, value: 53}
+    - {index: 0, abbr: dec, value: 33}
+    - {index: 0, abbr: vel, value: 102}
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 17760
+    duration: 480
+    tone: 57
+    lyric: '- な弱C4'
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 121}
+    phoneme_overrides: []
+  - position: 18240
+    duration: 240
+    tone: 64
+    lyric: a が弱F4
+    pitch:
+      data:
+      - {x: -40, y: -70, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 18480
+    duration: 240
+    tone: 57
+    lyric: +
+    pitch:
+      data:
+      - {x: -88.81579, y: 70, shape: io}
+      - {x: 75.6579, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 123}
+    phoneme_overrides: []
+  - position: 18720
+    duration: 480
+    tone: 57
+    lyric: a れ弱C4
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 19200
+    duration: 720
+    tone: 56
+    lyric: e て弱C4
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 175, depth: 12.784195, in: 25.925926, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 19920
+    duration: 120
+    tone: 54
+    lyric: e ゆ弱G#3
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 20040
+    duration: 1080
+    tone: 57
+    lyric: u く弱G#3
+    pitch:
+      data:
+      - {x: -40, y: -30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 75, period: 194, depth: 26.420593, in: 21.728395, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 21840
+    duration: 240
+    tone: 57
+    lyric: '- お弱C4'
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 22080
+    duration: 360
+    tone: 57
+    lyric: o し弱F4
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 22440
+    duration: 360
+    tone: 64
+    lyric: i え弱F4
+    pitch:
+      data:
+      - {x: -40, y: -70, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 22800
+    duration: 3240
+    tone: 64
+    lyric: e て弱F4
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 58.858025, period: 239.5, depth: 34.659195, in: 14.945234, out: 30.833769, shift: 0, drift: 10.5, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: alt, value: 5}
+    - {index: 0, abbr: dec, value: 54}
+    - {index: 0, abbr: mod, value: 4}
+    - {index: 0, abbr: norm, value: 80}
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 26640
+    duration: 240
+    tone: 52
+    lyric: '- あ弱G#3'
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 26880
+    duration: 720
+    tone: 59
+    lyric: a な弱C4
+    pitch:
+      data:
+      - {x: -40, y: -70, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 27600
+    duration: 120
+    tone: 57
+    lyric: a た弱C4
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 27720
+    duration: 840
+    tone: 57
+    lyric: a に弱C4
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 53.45238, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 28560
+    duration: 240
+    tone: 52
+    lyric: i つ弱G#3
+    pitch:
+      data:
+      - {x: -40, y: 50, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 28800
+    duration: 720
+    tone: 59
+    lyric: u た弱C4
+    pitch:
+      data:
+      - {x: -40, y: -70, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 29520
+    duration: 120
+    tone: 61
+    lyric: a え弱C4
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 29640
+    duration: 600
+    tone: 61
+    lyric: e る弱C4
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 52, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 30240
+    duration: 160
+    tone: 62
+    lyric: u べ弱C4
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 30400
+    duration: 160
+    tone: 61
+    lyric: e き弱C4
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 30560
+    duration: 160
+    tone: 57
+    lyric: i こ弱G#3
+    pitch:
+      data:
+      - {x: -40, y: 40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 30720
+    duration: 240
+    tone: 59
+    lyric: o と弱G#3
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 30960
+    duration: 240
+    tone: 57
+    lyric: o ば弱G#3
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 31200
+    duration: 160
+    tone: 62
+    lyric: a さ弱C4
+    pitch:
+      data:
+      - {x: -40, y: -50, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 31360
+    duration: 160
+    tone: 61
+    lyric: a が弱C4
+    pitch:
+      data:
+      - {x: -40, y: 10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 31520
+    duration: 160
+    tone: 57
+    lyric: a す弱A4
+    pitch:
+      data:
+      - {x: -40, y: 40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 31680
+    duration: 240
+    tone: 59
+    lyric: u け弱G#3
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 31920
+    duration: 240
+    tone: 57
+    lyric: e ど弱G#3
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 32400
+    duration: 120
+    tone: 57
+    lyric: '- み弱G#3'
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 68.75, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 32520
+    duration: 120
+    tone: 57
+    lyric: i つ弱G#3
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 96.875, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 32640
+    duration: 240
+    tone: 59
+    lyric: u か弱C4
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 32880
+    duration: 120
+    tone: 57
+    lyric: a ら弱C4
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 33000
+    duration: 240
+    tone: 59
+    lyric: a な弱C4
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 33240
+    duration: 120
+    tone: 57
+    lyric: a い弱C4
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  - position: 33360
+    duration: 480
+    tone: 61
+    lyric: i の弱C4
+    pitch:
+      data:
+      - {x: -40, y: -40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions:
+    - {index: 0, abbr: vol, value: 114}
+    phoneme_overrides: []
+  curves:
+  - xs:
+    - 220
+    - 225
+    - 235
+    - 250
+    - 260
+    - 265
+    - 275
+    - 280
+    - 285
+    - 295
+    - 300
+    - 310
+    - 320
+    - 335
+    - 345
+    - 355
+    - 375
+    - 380
+    - 385
+    - 620
+    - 635
+    - 640
+    - 645
+    - 650
+    - 660
+    - 665
+    - 675
+    - 685
+    - 695
+    - 700
+    - 705
+    - 715
+    - 720
+    - 725
+    - 730
+    - 735
+    - 740
+    - 745
+    - 750
+    - 755
+    - 760
+    - 775
+    - 780
+    - 785
+    - 795
+    - 805
+    - 810
+    - 815
+    - 820
+    - 825
+    - 830
+    - 835
+    - 860
+    - 865
+    - 880
+    - 890
+    - 895
+    - 905
+    - 915
+    - 920
+    - 925
+    - 930
+    - 935
+    - 945
+    - 965
+    - 995
+    - 1000
+    - 1005
+    - 1045
+    - 1060
+    - 1065
+    - 1240
+    - 1245
+    - 1250
+    - 1265
+    - 1275
+    - 1280
+    - 1295
+    - 1300
+    - 1455
+    - 1465
+    - 1475
+    - 1480
+    - 1490
+    - 1500
+    - 1515
+    - 1520
+    - 1525
+    - 1680
+    - 1685
+    - 1695
+    - 1710
+    - 1715
+    - 1720
+    - 2495
+    - 2500
+    - 2505
+    - 2515
+    - 2520
+    - 2525
+    - 2530
+    - 2535
+    - 2540
+    - 2545
+    - 2555
+    - 2595
+    - 2600
+    - 2610
+    - 2615
+    - 2630
+    - 2640
+    - 2645
+    - 2650
+    - 2690
+    - 2700
+    - 2710
+    - 2720
+    - 2725
+    - 2730
+    - 2750
+    - 2755
+    - 2765
+    - 2770
+    - 2865
+    - 2870
+    - 2890
+    - 2895
+    - 2900
+    - 2905
+    - 2915
+    - 2920
+    - 2945
+    - 2950
+    - 2970
+    - 2975
+    - 3395
+    - 3400
+    - 3405
+    - 3415
+    - 3430
+    - 3445
+    - 3450
+    - 3505
+    - 3510
+    - 3525
+    - 3530
+    - 3535
+    - 3545
+    - 3570
+    - 3585
+    - 3590
+    - 3620
+    - 3625
+    - 3630
+    - 3635
+    - 3655
+    - 3675
+    - 3690
+    - 3695
+    - 3725
+    - 3755
+    - 3760
+    - 3765
+    - 3780
+    - 3805
+    - 3810
+    - 3835
+    - 3840
+    - 3845
+    - 3855
+    - 3865
+    - 3870
+    - 3875
+    - 3890
+    - 3900
+    - 3905
+    - 3915
+    - 3920
+    - 3975
+    - 3985
+    - 4055
+    - 4060
+    - 4100
+    - 4105
+    - 4125
+    - 4145
+    - 4150
+    - 4165
+    - 4170
+    - 4190
+    - 4205
+    - 4215
+    - 4220
+    - 4230
+    - 4245
+    - 4255
+    - 4260
+    - 4270
+    - 4275
+    - 4280
+    - 5045
+    - 5050
+    - 5060
+    - 5065
+    - 5080
+    - 5100
+    - 5110
+    - 5255
+    - 5260
+    - 5265
+    - 5290
+    - 5295
+    - 5305
+    - 5315
+    - 5320
+    - 5345
+    - 5350
+    - 5355
+    - 5365
+    - 5580
+    - 5595
+    - 5605
+    - 5615
+    - 5620
+    - 5640
+    - 5660
+    - 5665
+    - 5670
+    - 5765
+    - 5770
+    - 5785
+    - 5790
+    - 5800
+    - 5805
+    - 5815
+    - 5820
+    - 5825
+    - 5835
+    - 5850
+    - 5855
+    - 6075
+    - 6080
+    - 6090
+    - 6095
+    - 6100
+    - 6120
+    - 6130
+    - 6135
+    - 6140
+    - 6150
+    - 6185
+    - 6190
+    - 6435
+    - 6440
+    - 6455
+    - 6485
+    - 6490
+    - 6555
+    - 6570
+    - 6580
+    - 6585
+    - 6590
+    - 6685
+    - 6690
+    - 6695
+    - 7595
+    - 7600
+    - 7615
+    - 7640
+    - 7655
+    - 7665
+    - 7690
+    - 7695
+    - 7700
+    - 7705
+    - 7710
+    - 7725
+    - 7730
+    - 7735
+    - 7895
+    - 7900
+    - 7920
+    - 7930
+    - 7935
+    - 7940
+    - 7945
+    - 7950
+    - 7955
+    - 7965
+    - 7970
+    - 7975
+    - 7980
+    - 7985
+    - 7990
+    - 7995
+    - 8005
+    - 8015
+    - 8030
+    - 8035
+    - 8040
+    - 8110
+    - 8115
+    - 8120
+    - 8125
+    - 10190
+    - 10205
+    - 10230
+    - 10235
+    - 10245
+    - 10250
+    - 10255
+    - 10265
+    - 10270
+    - 10275
+    - 10280
+    - 10285
+    - 10290
+    - 10305
+    - 10320
+    - 10330
+    - 10335
+    - 10340
+    - 10355
+    - 10365
+    - 10385
+    - 10395
+    - 10400
+    - 10405
+    - 10430
+    - 10445
+    - 10450
+    - 10455
+    - 10460
+    - 10465
+    - 10470
+    - 10475
+    - 10485
+    - 10490
+    - 10505
+    - 10510
+    - 10515
+    - 10590
+    - 10595
+    - 10605
+    - 10610
+    - 10645
+    - 10650
+    - 10655
+    - 10905
+    - 10910
+    - 10915
+    - 11870
+    - 11885
+    - 11895
+    - 11900
+    - 11905
+    - 11915
+    - 11950
+    - 11955
+    - 11960
+    - 11995
+    - 12000
+    - 12010
+    - 12015
+    - 12020
+    - 12030
+    - 12105
+    - 12110
+    - 12120
+    - 12125
+    - 12130
+    - 12365
+    - 12370
+    - 12375
+    - 12385
+    - 12390
+    - 12400
+    - 12415
+    - 12420
+    - 12425
+    - 12450
+    - 12455
+    - 12465
+    - 12470
+    - 12475
+    - 12480
+    - 12505
+    - 12550
+    - 12555
+    - 12715
+    - 12720
+    - 12740
+    - 12745
+    - 12750
+    - 13230
+    - 13240
+    - 13270
+    - 13280
+    - 13285
+    - 13295
+    - 13310
+    - 13320
+    - 13335
+    - 13350
+    - 13355
+    - 13360
+    - 13370
+    - 13380
+    - 13385
+    - 14125
+    - 14130
+    - 14135
+    - 14140
+    - 14155
+    - 14165
+    - 14170
+    - 14175
+    - 14185
+    - 14195
+    - 14210
+    - 15565
+    - 15570
+    - 15575
+    - 16020
+    - 16025
+    - 16035
+    - 16040
+    - 16050
+    - 16060
+    - 16065
+    - 16090
+    - 16100
+    - 16105
+    - 16125
+    - 16130
+    - 16135
+    - 16150
+    - 16155
+    - 16160
+    - 16170
+    - 16175
+    - 16190
+    - 16195
+    - 16200
+    - 16210
+    - 16220
+    - 16230
+    - 16245
+    - 16250
+    - 16265
+    - 16270
+    - 16285
+    - 16290
+    - 16300
+    - 16305
+    - 16310
+    - 16315
+    - 16320
+    - 16325
+    - 16330
+    - 16335
+    - 16340
+    - 16375
+    - 16395
+    - 16405
+    - 16415
+    - 16420
+    - 16785
+    - 16790
+    - 16795
+    - 16800
+    - 17220
+    - 17230
+    - 17245
+    - 17255
+    - 17260
+    - 17270
+    - 17280
+    - 17290
+    - 17300
+    - 17305
+    - 17310
+    - 17315
+    - 17645
+    - 17655
+    - 17665
+    - 17670
+    - 17675
+    - 17680
+    - 17695
+    - 17700
+    - 17730
+    - 17735
+    - 17740
+    - 17745
+    - 17755
+    - 17760
+    - 17765
+    - 17770
+    - 17780
+    - 17785
+    - 17795
+    - 17800
+    - 17815
+    - 17820
+    - 17825
+    - 17845
+    - 17850
+    - 17855
+    - 17865
+    - 17890
+    - 17895
+    - 17900
+    - 17905
+    - 17915
+    - 17920
+    - 17940
+    - 17965
+    - 17970
+    - 18025
+    - 18030
+    - 18035
+    - 18045
+    - 18070
+    - 18085
+    - 18090
+    - 18095
+    - 18110
+    - 18120
+    - 18125
+    - 18130
+    - 18175
+    - 18190
+    - 18205
+    - 18215
+    - 18220
+    - 18255
+    - 18270
+    - 18275
+    - 18290
+    - 18305
+    - 18315
+    - 18320
+    - 18330
+    - 18335
+    - 18340
+    - 18375
+    - 18380
+    - 19820
+    - 19825
+    - 19830
+    - 19840
+    - 19860
+    - 19875
+    - 19880
+    - 19885
+    - 19890
+    - 19895
+    - 19900
+    - 19930
+    - 19935
+    - 19945
+    - 19955
+    - 22390
+    - 22395
+    - 22410
+    - 22415
+    - 22420
+    - 22425
+    - 22430
+    - 22450
+    - 22455
+    - 22460
+    - 22465
+    - 22475
+    - 22485
+    - 22490
+    - 22505
+    - 22510
+    - 22525
+    - 22530
+    - 22600
+    - 22615
+    - 22665
+    - 22725
+    - 22740
+    - 22750
+    - 22855
+    - 22875
+    - 22880
+    - 22935
+    - 22965
+    - 22985
+    - 22990
+    - 23135
+    - 23145
+    - 23190
+    - 23205
+    - 23420
+    - 23425
+    - 23430
+    - 24450
+    - 24455
+    - 24460
+    - 25295
+    - 25300
+    - 25320
+    - 25325
+    - 25340
+    - 25365
+    - 25380
+    - 25410
+    - 25415
+    - 25430
+    - 25455
+    - 25470
+    - 25480
+    - 25495
+    - 25500
+    - 25510
+    - 25515
+    - 25550
+    - 25560
+    - 25565
+    - 25580
+    - 25585
+    - 25590
+    - 25595
+    - 25620
+    - 25630
+    - 25640
+    - 25645
+    - 25660
+    - 25670
+    - 28460
+    - 28465
+    - 28475
+    - 28485
+    - 28495
+    - 28500
+    - 30850
+    - 30855
+    - 30865
+    - 30875
+    - 30880
+    - 30890
+    - 30900
+    - 30905
+    - 30930
+    - 30935
+    - 30975
+    - 30980
+    - 30985
+    - 31005
+    - 31010
+    - 31025
+    - 31035
+    - 31040
+    - 31765
+    - 31770
+    - 31785
+    - 31800
+    - 31805
+    - 31810
+    - 31815
+    - 31820
+    - 31830
+    - 31835
+    - 31840
+    - 31845
+    - 31850
+    - 31860
+    - 31865
+    - 31875
+    - 31890
+    - 31895
+    - 31905
+    - 31930
+    - 31935
+    - 31940
+    - 31945
+    - 31970
+    - 31975
+    - 32440
+    - 32445
+    - 32450
+    ys:
+    - 0
+    - 336
+    - 318
+    - 314
+    - 291
+    - 291
+    - 270
+    - 268
+    - 259
+    - 236
+    - 232
+    - 203
+    - 200
+    - 148
+    - 126
+    - 123
+    - 27
+    - 9
+    - 0
+    - 0
+    - 5
+    - 9
+    - 9
+    - 14
+    - 14
+    - 18
+    - 18
+    - 23
+    - 14
+    - -36
+    - -23
+    - 33
+    - 64
+    - -46
+    - -83
+    - -27
+    - -14
+    - -10
+    - -23
+    - -27
+    - -27
+    - -18
+    - -18
+    - -14
+    - -14
+    - -5
+    - -5
+    - 0
+    - -6
+    - -6
+    - -17
+    - 0
+    - 0
+    - -9
+    - 5
+    - 5
+    - 14
+    - 18
+    - 18
+    - 23
+    - 23
+    - 27
+    - 27
+    - 36
+    - 36
+    - 14
+    - 14
+    - 9
+    - 9
+    - 14
+    - 0
+    - 0
+    - 9
+    - -18
+    - -27
+    - -41
+    - -41
+    - -36
+    - 0
+    - 0
+    - 32
+    - 45
+    - 59
+    - 14
+    - 9
+    - 9
+    - 14
+    - 0
+    - 0
+    - -79
+    - -39
+    - -41
+    - -36
+    - 0
+    - 0
+    - 132
+    - 168
+    - 236
+    - 86
+    - -27
+    - 18
+    - 77
+    - 82
+    - 164
+    - 0
+    - 0
+    - 150
+    - 146
+    - -9
+    - -5
+    - 5
+    - 5
+    - 9
+    - 9
+    - 5
+    - -5
+    - 23
+    - 318
+    - -9
+    - 5
+    - 23
+    - 23
+    - 0
+    - 0
+    - 383
+    - 103
+    - 49
+    - 16
+    - 0
+    - 0
+    - -14
+    - -9
+    - -5
+    - -5
+    - 0
+    - 0
+    - 27
+    - -2
+    - -2
+    - 7
+    - 7
+    - 0
+    - 0
+    - -20
+    - -15
+    - -11
+    - -11
+    - -2
+    - -2
+    - -13
+    - 0
+    - 0
+    - 18
+    - 18
+    - 3
+    - 7
+    - 12
+    - 7
+    - 3
+    - 3
+    - 7
+    - -6
+    - -6
+    - 3
+    - 3
+    - 7
+    - 7
+    - 200
+    - 759
+    - 673
+    - 664
+    - 594
+    - 605
+    - 623
+    - 627
+    - 641
+    - 650
+    - 173
+    - 173
+    - 182
+    - 182
+    - 191
+    - 191
+    - 195
+    - 195
+    - 200
+    - 209
+    - 209
+    - 214
+    - 214
+    - 223
+    - 223
+    - 227
+    - 227
+    - 236
+    - 236
+    - 241
+    - 241
+    - 245
+    - 0
+    - 0
+    - 81
+    - 100
+    - 30
+    - 16
+    - 21
+    - 0
+    - 0
+    - -100
+    - -126
+    - -40
+    - -41
+    - -16
+    - -15
+    - -11
+    - -11
+    - -43
+    - -34
+    - 0
+    - 0
+    - 7
+    - 7
+    - 12
+    - 16
+    - 16
+    - 3
+    - -6
+    - 0
+    - 0
+    - 114
+    - 76
+    - 80
+    - 57
+    - 3
+    - -4
+    - -15
+    - -20
+    - -20
+    - -13
+    - 0
+    - 0
+    - 12
+    - 12
+    - 16
+    - 21
+    - 21
+    - 26
+    - 30
+    - 12
+    - 7
+    - 7
+    - 0
+    - 0
+    - 230
+    - 230
+    - 226
+    - 221
+    - 221
+    - 226
+    - 216
+    - 216
+    - 0
+    - 0
+    - 7
+    - 0
+    - 0
+    - -2
+    - 7
+    - 7
+    - 3
+    - -143
+    - -138
+    - -165
+    - -152
+    - -152
+    - -188
+    - -228
+    - -229
+    - 0
+    - 0
+    - -532
+    - -488
+    - -482
+    - -468
+    - -452
+    - -450
+    - -436
+    - -418
+    - -418
+    - -400
+    - -395
+    - -382
+    - -364
+    - -359
+    - -342
+    - -336
+    - -290
+    - -252
+    - -248
+    - -23
+    - -18
+    - -14
+    - -18
+    - 0
+    - 0
+    - -324
+    - -247
+    - -237
+    - -234
+    - -210
+    - -206
+    - -163
+    - -161
+    - -136
+    - -126
+    - -211
+    - -211
+    - -202
+    - -202
+    - -197
+    - -70
+    - -43
+    - -6
+    - -2
+    - -2
+    - 3
+    - 7
+    - 12
+    - 12
+    - 16
+    - 3
+    - 3
+    - 12
+    - -29
+    - 12
+    - 16
+    - 21
+    - 0
+    - 0
+    - -15
+    - 0
+    - 0
+    - 7
+    - 7
+    - 0
+    - 0
+    - 26
+    - 0
+    - 0
+    - -11
+    - 0
+    - 0
+    - 12
+    - 12
+    - 16
+    - 157
+    - 162
+    - 157
+    - 176
+    - 176
+    - 171
+    - 42
+    - 12
+    - 3
+    - -2
+    - -3
+    - 0
+    - 12
+    - 21
+    - 21
+    - 0
+    - 0
+    - 45
+    - 34
+    - 26
+    - 30
+    - 3
+    - 3
+    - 7
+    - -6
+    - -6
+    - 3
+    - 3
+    - 7
+    - 7
+    - 12
+    - 12
+    - 7
+    - 0
+    - 0
+    - -93
+    - -40
+    - -34
+    - 0
+    - 0
+    - -6
+    - -6
+    - -11
+    - -15
+    - -24
+    - -24
+    - -15
+    - -15
+    - -6
+    - -6
+    - -2
+    - -2
+    - 7
+    - 0
+    - 0
+    - -138
+    - -61
+    - -56
+    - -52
+    - -43
+    - -38
+    - -38
+    - -15
+    - -6
+    - 0
+    - 0
+    - -15
+    - 0
+    - 0
+    - -7
+    - -6
+    - 9
+    - -5
+    - -7
+    - -14
+    - -81
+    - -99
+    - -100
+    - -87
+    - -87
+    - -78
+    - -78
+    - -73
+    - -64
+    - -28
+    - -19
+    - -5
+    - -5
+    - 4
+    - 9
+    - 13
+    - 13
+    - 4
+    - 4
+    - -23
+    - -23
+    - -19
+    - -14
+    - -14
+    - -10
+    - -5
+    - -5
+    - -1
+    - -1
+    - 4
+    - 4
+    - 9
+    - 4
+    - 9
+    - 13
+    - 9
+    - 0
+    - 0
+    - -19
+    - -19
+    - 0
+    - 0
+    - 1
+    - 6
+    - -8
+    - -8
+    - -81
+    - -90
+    - -90
+    - 10
+    - -24
+    - -26
+    - 0
+    - 0
+    - 7
+    - 7
+    - 12
+    - 12
+    - 16
+    - 16
+    - 21
+    - 21
+    - 24
+    - -202
+    - -211
+    - -224
+    - -224
+    - -102
+    - -84
+    - -70
+    - -70
+    - -52
+    - -3
+    - -2
+    - 7
+    - 10
+    - 6
+    - 9
+    - 1
+    - 10
+    - 13
+    - 15
+    - 12
+    - 16
+    - 3
+    - 16
+    - 16
+    - 7
+    - 3
+    - 3
+    - 16
+    - 3
+    - -2
+    - -2
+    - -11
+    - -11
+    - -15
+    - -15
+    - -6
+    - -6
+    - 8
+    - 4
+    - 9
+    - 18
+    - 18
+    - 22
+    - 22
+    - 18
+    - -19
+    - -26
+    - -26
+    - -17
+    - -3
+    - -3
+    - -11
+    - -3
+    - -3
+    - 0
+    - 0
+    - 12
+    - 16
+    - 16
+    - -11
+    - -61
+    - -61
+    - -84
+    - -120
+    - -133
+    - -159
+    - -27
+    - -9
+    - 3
+    - 3
+    - 0
+    - 7
+    - 7
+    - 11
+    - -6
+    - -58
+    - -130
+    - -519
+    - -595
+    - -638
+    - -642
+    - -534
+    - -493
+    - -15
+    - 7
+    - 12
+    - 12
+    - 0
+    - 0
+    - 7
+    - 7
+    - 3
+    - -2
+    - -6
+    - -6
+    - -2
+    - 3
+    - 3
+    - -2
+    - -6
+    - -11
+    - -11
+    - -15
+    - -11
+    - 0
+    - 0
+    - -11
+    - 0
+    - 0
+    - 7
+    - 0
+    - 0
+    - 7
+    - 7
+    - -11
+    - -2
+    - -2
+    - -11
+    - -11
+    - 4
+    - 4
+    - -1
+    - -10
+    - -10
+    - -1
+    - 13
+    - 13
+    - 18
+    - 18
+    - 4
+    - -14
+    - -19
+    - -23
+    - -28
+    - -28
+    - -23
+    - -14
+    - -14
+    - -10
+    - -10
+    - 0
+    - 0
+    - -23
+    - -41
+    - -51
+    - -51
+    - 0
+    - 0
+    - -155
+    - -178
+    - -191
+    - -205
+    - -196
+    - -196
+    - -191
+    - -191
+    - -196
+    - -26
+    - -12
+    - -5
+    - -10
+    - -14
+    - -14
+    - -10
+    - 0
+    - 0
+    - 4
+    - 4
+    - 13
+    - 13
+    - 9
+    - 4
+    - -114
+    - -119
+    - -128
+    - -141
+    - -155
+    - -178
+    - -191
+    - -196
+    - -201
+    - -201
+    - -205
+    - -184
+    - -48
+    - -26
+    - -12
+    - -5
+    - -10
+    - 0
+    - 0
+    - -5
+    - 0
+    abbr: pitd
+- duration: 23040
+  name: New Part
+  comment: ""
+  track_no: 1
+  position: 57600
+  notes:
+  - position: 1680
+    duration: 240
+    tone: 64
+    lyric: '- あ弱C4'
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 1920
+    duration: 720
+    tone: 68
+    lyric: a な弱A4
+    pitch:
+      data:
+      - {x: -40, y: -40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 2640
+    duration: 120
+    tone: 64
+    lyric: a た弱A4
+    pitch:
+      data:
+      - {x: -40, y: 40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 2760
+    duration: 840
+    tone: 64
+    lyric: a に弱F4
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 3600
+    duration: 240
+    tone: 61
+    lyric: i つ弱C4
+    pitch:
+      data:
+      - {x: -40, y: 30, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 3840
+    duration: 720
+    tone: 68
+    lyric: u た弱A4
+    pitch:
+      data:
+      - {x: -40, y: -70, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 4560
+    duration: 120
+    tone: 69
+    lyric: a え弱A4
+    pitch:
+      data:
+      - {x: -40, y: -10, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 4680
+    duration: 600
+    tone: 69
+    lyric: e る弱A4
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 5280
+    duration: 160
+    tone: 71
+    lyric: u べ弱F4
+    pitch:
+      data:
+      - {x: -40, y: -20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 5440
+    duration: 160
+    tone: 69
+    lyric: e き弱F4
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 5600
+    duration: 160
+    tone: 64
+    lyric: i こ弱F4
+    pitch:
+      data:
+      - {x: -40, y: 50, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 6240
+    duration: 160
+    tone: 71
+    lyric: a さ弱A4
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 6400
+    duration: 160
+    tone: 69
+    lyric: a が弱A4
+    pitch:
+      data:
+      - {x: -40, y: 20, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 6560
+    duration: 160
+    tone: 64
+    lyric: a す弱F4
+    pitch:
+      data:
+      - {x: -40, y: 50, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 7440
+    duration: 120
+    tone: 64
+    lyric: '- み弱F4'
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 7560
+    duration: 120
+    tone: 64
+    lyric: i つ弱F4
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 34.375, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 7680
+    duration: 240
+    tone: 68
+    lyric: u か弱A4
+    pitch:
+      data:
+      - {x: -40, y: -40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 7920
+    duration: 120
+    tone: 64
+    lyric: u ら弱F4
+    pitch:
+      data:
+      - {x: -40, y: 40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 8040
+    duration: 240
+    tone: 68
+    lyric: a な弱A4
+    pitch:
+      data:
+      - {x: -40, y: -40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 8280
+    duration: 120
+    tone: 64
+    lyric: a い弱F4
+    pitch:
+      data:
+      - {x: -40, y: 40, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  - position: 8400
+    duration: 480
+    tone: 64
+    lyric: i の弱F4
+    pitch:
+      data:
+      - {x: -40, y: 0, shape: io}
+      - {x: 40, y: 0, shape: io}
+      snap_first: true
+    vibrato: {length: 0, period: 175, depth: 25, in: 10, out: 10, shift: 0, drift: 0, vol_link: 0}
+    phoneme_expressions: []
+    phoneme_overrides: []
+  curves:
+  - xs:
+    - 855
+    - 860
+    - 865
+    - 1885
+    - 1890
+    - 1895
+    - 1900
+    - 1930
+    - 1935
+    - 1940
+    - 1945
+    - 1975
+    - 1990
+    - 2005
+    - 2015
+    - 2030
+    - 2040
+    - 2045
+    - 5855
+    - 5865
+    - 5875
+    - 5890
+    - 5900
+    - 5910
+    - 5915
+    - 5920
+    - 5925
+    - 5935
+    - 5950
+    - 5970
+    - 5975
+    - 5980
+    - 5985
+    - 5990
+    - 6005
+    - 6010
+    - 6015
+    - 6025
+    - 6035
+    - 6070
+    - 6080
+    - 6085
+    - 8685
+    - 8705
+    - 8725
+    - 8740
+    - 8745
+    - 8750
+    - 8755
+    - 8770
+    - 8775
+    - 8785
+    - 8790
+    - 8800
+    - 8810
+    - 8815
+    - 8820
+    - 8840
+    - 8855
+    - 8860
+    - 8870
+    - 8885
+    - 8890
+    - 8905
+    - 8915
+    - 8920
+    - 8925
+    ys:
+    - 0
+    - -88
+    - 0
+    - 0
+    - 7
+    - 7
+    - -1
+    - -302
+    - -341
+    - -371
+    - -379
+    - -379
+    - -384
+    - -370
+    - -365
+    - -361
+    - -354
+    - 0
+    - 0
+    - 12
+    - 16
+    - 16
+    - 7
+    - 7
+    - 3
+    - 3
+    - -2
+    - -2
+    - -20
+    - -34
+    - -30
+    - -32
+    - -30
+    - -18
+    - 42
+    - 51
+    - -32
+    - -6
+    - -4
+    - -2
+    - -6
+    - 0
+    - 0
+    - 3
+    - 7
+    - 12
+    - 16
+    - 16
+    - 21
+    - 21
+    - 26
+    - 26
+    - 30
+    - 30
+    - 35
+    - 35
+    - 39
+    - 39
+    - 48
+    - 48
+    - 53
+    - 66
+    - 68
+    - 85
+    - 85
+    - 89
+    - 0
+    abbr: pitd
+wave_parts:
+- name: You and beautiful world LUKA MEGURINE- Instrumental.mp3
+  comment: ""
+  track_no: 2
+  position: 857
+  relative_path: ../Downloads/You and beautiful world LUKA MEGURINE- Instrumental.mp3
+  file_duration_ms: 317910.204
+  skip_ms: 0
+  trim_ms: 0
